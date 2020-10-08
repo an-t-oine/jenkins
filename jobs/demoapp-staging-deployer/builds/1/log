@@ -1,0 +1,11 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /home/jenkins/jobs/demoapp-staging-deployer/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson3423303150334114657.sh
++ STAGING_CONTAINER_NAME=staging-demo-app
++ docker stop staging-demo-app
+Error response from daemon: No such container: staging-demo-app
++ echo Nothing to Clean here
+Nothing to Clean here
++ docker run --name=staging-demo-app -d -p 20000:8080 demo-app:latest
+ff6b2ab77025b3217455d04963ac0be0effaeb4893e7b298d6c53905668f0f9e
+Finished: SUCCESS

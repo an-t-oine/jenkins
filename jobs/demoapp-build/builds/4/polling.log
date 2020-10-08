@@ -1,0 +1,8 @@
+Started on Oct 7, 2020 3:04:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 6951afb7a06d8a278ee853fd99f052b079aefbfc (refs/remotes/origin/master)
+ > git ls-remote -h http://localhost:5000/gitserver/butler/demoapp.git # timeout=10
+Found 1 remote heads on http://localhost:5000/gitserver/butler/demoapp.git
+[poll] Latest remote head revision on refs/heads/master is: 323cab649db5a365e75ea068028a27e6a0da3ae7
+Done. Took 61 ms
+Changes found

@@ -1,0 +1,256 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /home/jenkins/jobs/demoapp-build/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://localhost:5000/gitserver/butler/demoapp.git # timeout=10
+Fetching upstream changes from http://localhost:5000/gitserver/butler/demoapp.git
+ > git --version # timeout=10
+ > git fetch --tags --progress http://localhost:5000/gitserver/butler/demoapp.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 323cab649db5a365e75ea068028a27e6a0da3ae7 (refs/remotes/origin/master)
+Commit message: "use port 8082 for integration"
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 323cab649db5a365e75ea068028a27e6a0da3ae7
+ > git rev-list 323cab649db5a365e75ea068028a27e6a0da3ae7 # timeout=10
+[workspace] $ /usr/share/java/maven-3/bin/mvn clean install -fn -B
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Demo DropWizard Application 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ demoapp ---
+[INFO] Deleting /home/jenkins/jobs/demoapp-build/workspace/target
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ demoapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ demoapp ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /home/jenkins/jobs/demoapp-build/workspace/target/classes
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ demoapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ demoapp ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /home/jenkins/jobs/demoapp-build/workspace/target/test-classes
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /home/jenkins/jobs/demoapp-build/workspace/src/test/java/com/cloudbees/demoapp/test/HelloWorldEndpointTest.java: /home/jenkins/jobs/demoapp-build/workspace/src/test/java/com/cloudbees/demoapp/test/HelloWorldEndpointTest.java uses or overrides a deprecated API.
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /home/jenkins/jobs/demoapp-build/workspace/src/test/java/com/cloudbees/demoapp/test/HelloWorldEndpointTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.20:test (default-test) @ demoapp ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.cloudbees.demoapp.test.HelloWorldResourceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.876 s - in com.cloudbees.demoapp.test.HelloWorldResourceTest
+[INFO] Running com.cloudbees.demoapp.test.HelloWorldEndpointTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.036 s - in com.cloudbees.demoapp.test.HelloWorldEndpointTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ demoapp ---
+[INFO] Building jar: /home/jenkins/jobs/demoapp-build/workspace/target/demoapp.jar
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-shade-plugin:3.0.0:shade (default) @ demoapp ---
+[INFO] Including io.dropwizard:dropwizard-core:jar:1.1.2 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-util:jar:1.1.2 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-annotations:jar:2.8.0 in the shaded jar.
+[INFO] Including com.google.guava:guava:jar:21.0 in the shaded jar.
+[INFO] Including com.google.code.findbugs:jsr305:jar:3.0.1 in the shaded jar.
+[INFO] Including joda-time:joda-time:jar:2.9.7 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-jackson:jar:1.1.2 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-core:jar:2.8.9 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-databind:jar:2.8.9 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.datatype:jackson-datatype-guava:jar:2.8.9 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.8.9 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.8.9 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.8.9 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.module:jackson-module-afterburner:jar:2.8.9 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.datatype:jackson-datatype-joda:jar:2.8.9 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.24 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-classic:jar:1.2.1 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-validation:jar:1.1.2 in the shaded jar.
+[INFO] Including org.hibernate:hibernate-validator:jar:5.3.4.Final in the shaded jar.
+[INFO] Including javax.validation:validation-api:jar:1.1.0.Final in the shaded jar.
+[INFO] Including org.jboss.logging:jboss-logging:jar:3.3.0.Final in the shaded jar.
+[INFO] Including com.fasterxml:classmate:jar:1.3.1 in the shaded jar.
+[INFO] Including org.glassfish:javax.el:jar:3.0.0 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-configuration:jar:1.1.2 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.8.9 in the shaded jar.
+[INFO] Including org.yaml:snakeyaml:jar:1.17 in the shaded jar.
+[INFO] Including org.apache.commons:commons-lang3:jar:3.5 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-logging:jar:1.1.2 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-logback:jar:3.2.2 in the shaded jar.
+[INFO] Including org.slf4j:jul-to-slf4j:jar:1.7.24 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-core:jar:1.2.1 in the shaded jar.
+[INFO] Including org.slf4j:log4j-over-slf4j:jar:1.7.24 in the shaded jar.
+[INFO] Including org.slf4j:jcl-over-slf4j:jar:1.7.24 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-util:jar:9.4.2.v20170220 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-metrics:jar:1.1.2 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-jersey:jar:1.1.2 in the shaded jar.
+[INFO] Including org.glassfish.jersey.core:jersey-server:jar:2.25.1 in the shaded jar.
+[INFO] Including org.glassfish.jersey.core:jersey-common:jar:2.25.1 in the shaded jar.
+[INFO] Including org.glassfish.jersey.bundles.repackaged:jersey-guava:jar:2.25.1 in the shaded jar.
+[INFO] Including org.glassfish.hk2:osgi-resource-locator:jar:1.0.1 in the shaded jar.
+[INFO] Including javax.ws.rs:javax.ws.rs-api:jar:2.0.1 in the shaded jar.
+[INFO] Including org.glassfish.jersey.media:jersey-media-jaxb:jar:2.25.1 in the shaded jar.
+[INFO] Including javax.annotation:javax.annotation-api:jar:1.2 in the shaded jar.
+[INFO] Including org.glassfish.hk2:hk2-api:jar:2.5.0-b32 in the shaded jar.
+[INFO] Including org.glassfish.hk2:hk2-utils:jar:2.5.0-b32 in the shaded jar.
+[INFO] Including org.glassfish.hk2.external:aopalliance-repackaged:jar:2.5.0-b32 in the shaded jar.
+[INFO] Including org.glassfish.hk2.external:javax.inject:jar:2.5.0-b32 in the shaded jar.
+[INFO] Including org.glassfish.hk2:hk2-locator:jar:2.5.0-b32 in the shaded jar.
+[INFO] Including org.javassist:javassist:jar:3.20.0-GA in the shaded jar.
+[INFO] Including org.glassfish.jersey.ext:jersey-metainf-services:jar:2.25.1 in the shaded jar.
+[INFO] Including org.glassfish.jersey.ext:jersey-bean-validation:jar:2.25.1 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-jersey2:jar:3.2.2 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.8.9 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.8.9 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.8.9 in the shaded jar.
+[INFO] Including org.glassfish.jersey.containers:jersey-container-servlet:jar:2.25.1 in the shaded jar.
+[INFO] Including org.glassfish.jersey.containers:jersey-container-servlet-core:jar:2.25.1 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-server:jar:9.4.2.v20170220 in the shaded jar.
+[INFO] Including javax.servlet:javax.servlet-api:jar:3.1.0 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-io:jar:9.4.2.v20170220 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-webapp:jar:9.4.2.v20170220 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-xml:jar:9.4.2.v20170220 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-continuation:jar:9.4.2.v20170220 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-servlets:jar:1.1.2 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-annotation:jar:3.2.2 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-jetty:jar:1.1.2 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-jetty9:jar:3.2.2 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-servlet:jar:9.4.2.v20170220 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-security:jar:9.4.2.v20170220 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-servlets:jar:9.4.2.v20170220 in the shaded jar.
+[INFO] Including org.eclipse.jetty:jetty-http:jar:9.4.2.v20170220 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-lifecycle:jar:1.1.2 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-core:jar:3.2.2 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-jvm:jar:3.2.2 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-servlets:jar:3.2.2 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-json:jar:3.2.2 in the shaded jar.
+[INFO] Including com.papertrail:profiler:jar:1.0.2 in the shaded jar.
+[INFO] Including io.dropwizard.metrics:metrics-healthchecks:jar:3.2.2 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-request-logging:jar:1.1.2 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-access:jar:1.2.1 in the shaded jar.
+[INFO] Including net.sourceforge.argparse4j:argparse4j:jar:0.7.0 in the shaded jar.
+[INFO] Including org.eclipse.jetty.toolchain.setuid:jetty-setuid-java:jar:1.0.3 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-testing:jar:1.1.2 in the shaded jar.
+[INFO] Including junit:junit:jar:4.12 in the shaded jar.
+[INFO] Including org.hamcrest:hamcrest-core:jar:1.3 in the shaded jar.
+[INFO] Including org.objenesis:objenesis:jar:2.5.1 in the shaded jar.
+[INFO] Including org.assertj:assertj-core:jar:3.6.2 in the shaded jar.
+[INFO] Including org.glassfish.jersey.test-framework.providers:jersey-test-framework-provider-inmemory:jar:2.25.1 in the shaded jar.
+[INFO] Including org.glassfish.jersey.test-framework:jersey-test-framework-core:jar:2.25.1 in the shaded jar.
+[INFO] Including org.glassfish.jersey.core:jersey-client:jar:2.25.1 in the shaded jar.
+[INFO] Including io.dropwizard:dropwizard-assets:jar:1.1.2 in the shaded jar.
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /home/jenkins/jobs/demoapp-build/workspace/target/demoapp.jar with /home/jenkins/jobs/demoapp-build/workspace/target/demoapp-1.0.0-SNAPSHOT-shaded.jar
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-failsafe-plugin:2.20:integration-test (default) @ demoapp ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.cloudbees.demoapp.test.HelloWorldIntegrationTest
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/jenkins/jobs/demoapp-build/workspace/target/demoapp.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/jenkins/.m2/repository/ch/qos/logback/logback-classic/1.2.1/logback-classic-1.2.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+INFO  [2020-10-07 15:14:50,759] org.eclipse.jetty.util.log: Logging initialized @3920ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2020-10-07 15:14:51,044] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2020-10-07 15:14:51,047] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2020-10-07 15:14:51,050] io.dropwizard.assets.AssetsBundle: Registering AssetBundle with name: assets for path /*
+INFO  [2020-10-07 15:14:51,124] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2020-10-07 15:14:51,126] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2020-10-07 15:14:51,128] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2020-10-07 15:14:51,381] org.eclipse.jetty.setuid.SetUIDListener: Opened application@7544ac86{HTTP/1.1,[http/1.1]}{0.0.0.0:8082}
+INFO  [2020-10-07 15:14:51,382] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@3b27b497{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2020-10-07 15:14:51,386] org.eclipse.jetty.server.Server: jetty-9.4.z-SNAPSHOT
+INFO  [2020-10-07 15:14:52,880] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /api/hello-world (com.cloudbees.demoapp.resources.HelloWorldResource)
+
+INFO  [2020-10-07 15:14:52,892] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@5ed4bc{/,null,AVAILABLE}
+INFO  [2020-10-07 15:14:52,898] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2020-10-07 15:14:52,912] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@c8f97a7{/,null,AVAILABLE}
+INFO  [2020-10-07 15:14:52,943] org.eclipse.jetty.server.AbstractConnector: Started application@7544ac86{HTTP/1.1,[http/1.1]}{0.0.0.0:8082}
+INFO  [2020-10-07 15:14:52,945] org.eclipse.jetty.server.AbstractConnector: Started admin@3b27b497{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2020-10-07 15:14:52,945] org.eclipse.jetty.server.Server: Started @6109ms
+127.0.0.1 - - [07/Oct/2020:15:15:23 +0000] "GET /api/hello-world?name=dropwizard HTTP/1.1" 200 39 "-" "Jersey/2.25.1 (HttpUrlConnection 1.8.0_121)" 200
+INFO  [2020-10-07 15:15:23,608] org.eclipse.jetty.server.AbstractConnector: Stopped application@7544ac86{HTTP/1.1,[http/1.1]}{0.0.0.0:8082}
+INFO  [2020-10-07 15:15:23,611] org.eclipse.jetty.server.AbstractConnector: Stopped admin@3b27b497{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2020-10-07 15:15:23,616] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@c8f97a7{/,null,UNAVAILABLE}
+INFO  [2020-10-07 15:15:23,622] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@5ed4bc{/,null,UNAVAILABLE}
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.783 s - in com.cloudbees.demoapp.test.HelloWorldIntegrationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent! The file encoding for reports output files should be provided by the POM property ${project.reporting.outputEncoding}.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-failsafe-plugin:2.20:verify (default) @ demoapp ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.4:install (default-install) @ demoapp ---
+[INFO] Installing /home/jenkins/jobs/demoapp-build/workspace/target/demoapp.jar to /home/jenkins/.m2/repository/com/cloudbees/demoapp/1.0.0-SNAPSHOT/demoapp-1.0.0-SNAPSHOT.jar
+[INFO] Installing /home/jenkins/jobs/demoapp-build/workspace/pom.xml to /home/jenkins/.m2/repository/com/cloudbees/demoapp/1.0.0-SNAPSHOT/demoapp-1.0.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:01 min
+[INFO] Finished at: 2020-10-07T15:15:24+00:00
+[INFO] Final Memory: 26M/233M
+[INFO] ------------------------------------------------------------------------
+[workspace] $ /bin/sh -xe /tmp/hudson4831010007790061507.sh
++ DOCKER_IMG_BASENAME=demo-app
++ DOCKER_IMG_FULLNAME=demo-app:323cab649db5a365e75ea068028a27e6a0da3ae7
++ docker build -t demo-app:323cab649db5a365e75ea068028a27e6a0da3ae7 ./
+Sending build context to Docker daemon 557.1 kBSending build context to Docker daemon 1.114 MBSending build context to Docker daemon 1.671 MBSending build context to Docker daemon 2.228 MBSending build context to Docker daemon 2.785 MBSending build context to Docker daemon 3.342 MBSending build context to Docker daemon 3.899 MBSending build context to Docker daemon 4.456 MBSending build context to Docker daemon 5.014 MBSending build context to Docker daemon 5.571 MBSending build context to Docker daemon 6.128 MBSending build context to Docker daemon 6.685 MBSending build context to Docker daemon 7.242 MBSending build context to Docker daemon 7.799 MBSending build context to Docker daemon 8.356 MBSending build context to Docker daemon 8.913 MBSending build context to Docker daemon  9.47 MBSending build context to Docker daemon 10.03 MBSending build context to Docker daemon 10.58 MBSending build context to Docker daemon 11.14 MBSending build context to Docker daemon  11.7 MBSending build context to Docker daemon 12.26 MBSending build context to Docker daemon 12.81 MBSending build context to Docker daemon 13.37 MBSending build context to Docker daemon 13.93 MBSending build context to Docker daemon 14.48 MBSending build context to Docker daemon 15.04 MBSending build context to Docker daemon  15.6 MBSending build context to Docker daemon 16.15 MBSending build context to Docker daemon 16.71 MBSending build context to Docker daemon 17.06 MB
+Step 1/7 : FROM openjdk:8-jre-alpine
+ ---> b1bd879ca9b3
+Step 2/7 : LABEL MAINTAINER="Damien DUPORTAL <dduportal@cloudbees.com>"
+ ---> Using cache
+ ---> 426745d189fd
+Step 3/7 : COPY ./target/demoapp.jar /app/app.jar
+ ---> ef80a507bed4
+Step 4/7 : COPY hello-world.yml /app/config.yml
+ ---> 3db1a82d087e
+Step 5/7 : EXPOSE 8080
+ ---> Running in 2e2ab88cd777
+ ---> e87fc4f9e295
+Step 6/7 : ENTRYPOINT ["java","-jar","/app/app.jar"]
+ ---> Running in 54e142ddcde8
+ ---> 480715dae71f
+Step 7/7 : CMD ["server","/app/config.yml"]
+ ---> Running in 7c1ee4b5e196
+ ---> c9e39b16bc6e
+Removing intermediate container 2e2ab88cd777
+Removing intermediate container 54e142ddcde8
+Removing intermediate container 7c1ee4b5e196
+Successfully built c9e39b16bc6e
+Successfully tagged demo-app:323cab649db5a365e75ea068028a27e6a0da3ae7
++ docker tag demo-app:323cab649db5a365e75ea068028a27e6a0da3ae7 demo-app:latest
++ docker run -d -P demo-app:323cab649db5a365e75ea068028a27e6a0da3ae7
++ CID=e0253dbcc2d1df69061937a88da61f715273957c5e219344b3c0f9afa8cdcd1d
++ docker kill e0253dbcc2d1df69061937a88da61f715273957c5e219344b3c0f9afa8cdcd1d
+e0253dbcc2d1df69061937a88da61f715273957c5e219344b3c0f9afa8cdcd1d
++ docker rm -v e0253dbcc2d1df69061937a88da61f715273957c5e219344b3c0f9afa8cdcd1d
+e0253dbcc2d1df69061937a88da61f715273957c5e219344b3c0f9afa8cdcd1d
+Recording test results
+Archiving artifacts
+Warning: you have no plugins providing access control for builds, so falling back to legacy behavior of permitting any downstream builds to be triggered
+Triggering a new build of [8mha:AAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyJEgY5/az8JP2U1Nz8xIIC3eKSxHSgMbopqQU5+ZWpRfoADkmvTtMAAAA=[0mdemoapp-staging-deployer
+Finished: SUCCESS

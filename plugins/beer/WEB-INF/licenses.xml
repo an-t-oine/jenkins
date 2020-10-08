@@ -1,0 +1,5 @@
+<l:dependencies xmlns:l='licenses'>
+  <l:dependency name='beer' groupId='org.jenkins-ci.plugins' artifactId='beer' version='1.2' url='https://wiki.jenkins-ci.org/display/JENKINS/Beer+Plugin'>
+    <l:description />
+  </l:dependency>
+</l:dependencies>

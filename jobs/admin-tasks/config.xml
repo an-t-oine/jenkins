@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.security.AuthorizationMatrixProperty>
+      <blocksInheritance>true</blocksInheritance>
+      <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Update:jenkins-admin</permission>
+      <permission>hudson.model.Run.Delete:jenkins-admin</permission>
+      <permission>hudson.model.Item.Workspace:jenkins-admin</permission>
+      <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Delete:jenkins-admin</permission>
+      <permission>com.cloudbees.plugins.credentials.CredentialsProvider.ManageDomains:jenkins-admin</permission>
+      <permission>hudson.model.Run.Replay:jenkins-admin</permission>
+      <permission>hudson.model.Item.Configure:jenkins-admin</permission>
+      <permission>hudson.model.Item.Cancel:jenkins-admin</permission>
+      <permission>hudson.model.Item.Delete:jenkins-admin</permission>
+      <permission>hudson.model.Item.Read:jenkins-admin</permission>
+      <permission>com.cloudbees.plugins.credentials.CredentialsProvider.View:jenkins-admin</permission>
+      <permission>com.cloudbees.plugins.credentials.CredentialsProvider.Create:jenkins-admin</permission>
+      <permission>hudson.model.Item.Build:jenkins-admin</permission>
+      <permission>hudson.scm.SCM.Tag:jenkins-admin</permission>
+      <permission>hudson.model.Item.Move:jenkins-admin</permission>
+      <permission>hudson.model.Item.Discover:jenkins-admin</permission>
+      <permission>hudson.model.Run.Update:jenkins-admin</permission>
+    </hudson.security.AuthorizationMatrixProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.5.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>http://localhost:5000/gitserver/butler/admin-scripts.git</url>
+        <credentialsId>butler-gogs-creds</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>bash -x run-admin-task.sh</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

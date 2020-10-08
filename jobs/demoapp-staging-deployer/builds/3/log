@@ -1,0 +1,13 @@
+Started by upstream project "[8mha:AAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZh/az8JP2U1Nz8xIIC3aTSzJwUfQA2GfBSyAAAAA==[0mdemoapp-build" build number [8mha:AAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBhH9rPwk/ZTU3PzEggLdpNLMnBR9MwAtO7wAyQAAAA==[0m6
+originally caused by:
+ Gogs-ID: cf699aab-a8b9-4441-8487-524b31c770b8
+Building in workspace /home/jenkins/jobs/demoapp-staging-deployer/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson7041193902134331423.sh
++ STAGING_CONTAINER_NAME=staging-demo-app
++ docker stop staging-demo-app
+staging-demo-app
++ docker rm -v staging-demo-app
+staging-demo-app
++ docker run --name=staging-demo-app -d -p 20000:8080 demo-app:323cab649db5a365e75ea068028a27e6a0da3ae7
+bf8dbcb7b87c46efad4707a4322eebe4f6daa79584f91bd0486dbe149c3c037c
+Finished: SUCCESS

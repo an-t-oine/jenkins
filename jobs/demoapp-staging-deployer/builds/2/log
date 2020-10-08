@@ -1,0 +1,13 @@
+Started by upstream project "[8mha:AAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZh/az8JP2U1Nz8xIIC3aTSzJwUfQA2GfBSyAAAAA==[0mdemoapp-build" build number [8mha:AAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBhH9rPwk/ZTU3PzEggLdpNLMnBR9UwCXarWZyQAAAA==[0m5
+originally caused by:
+ Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /home/jenkins/jobs/demoapp-staging-deployer/workspace
+[workspace] $ /bin/sh -xe /tmp/hudson2954140661378938002.sh
++ STAGING_CONTAINER_NAME=staging-demo-app
++ docker stop staging-demo-app
+staging-demo-app
++ docker rm -v staging-demo-app
+staging-demo-app
++ docker run --name=staging-demo-app -d -p 20000:8080 demo-app:323cab649db5a365e75ea068028a27e6a0da3ae7
+25d4ec4c87c569f88bcb5f95d6fce538a49ea060392a0183ca83d70c38b20416
+Finished: SUCCESS

@@ -1,0 +1,11 @@
+commit 323cab649db5a365e75ea068028a27e6a0da3ae7
+tree 23e44e6207ad12a4158661376a7dc9f9da899a9d
+parent 6951afb7a06d8a278ee853fd99f052b079aefbfc
+author butler <butler@localhost.local> 2020-10-07 15:02:55 +0000
+committer butler <butler@localhost.local> 2020-10-07 15:02:55 +0000
+
+    use port 8082 for integration
+
+
+
+:100644 100644 9cd706666f7929b98d7665b44126b534efd742b5 1e0174ade401703ef1e5b4d47c6aa7fa7ef0b781 M	src/test/resources/helloworld-integrationtest.yaml

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-10-08 09:37:58.48 UTC</timestamp>
+  <md5sum>eba8af54d10f7414d8012490563aa23b</md5sum>
+  <fileName>Credential id=butler-gogs-creds name=butler/****** (Butler’s credentials for Gogs)</fileName>
+  <usages>
+    <entry>
+      <string>admin-tasks</string>
+      <ranges>1</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
